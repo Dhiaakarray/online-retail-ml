@@ -1,0 +1,110 @@
+{
+  "model_type": "random_forest",
+  "best_params": {
+    "model__max_depth": 8,
+    "model__n_estimators": 500
+  },
+  "metrics": {
+    "model": "random_forest_tuned",
+    "accuracy": 0.717680608365019,
+    "precision": 0.7376,
+    "recall": 0.7760942760942761,
+    "f1": 0.756357670221493,
+    "roc_auc": 0.789668886830459,
+    "confusion_matrix": [
+      [
+        294,
+        164
+      ],
+      [
+        133,
+        461
+      ]
+    ]
+  },
+  "all_candidate_results": [
+    {
+      "model": "logistic_regression",
+      "accuracy": 0.7224334600760456,
+      "precision": 0.7396825396825397,
+      "recall": 0.7845117845117845,
+      "f1": 0.761437908496732,
+      "roc_auc": 0.7890109243821034,
+      "confusion_matrix": [
+        [
+          294,
+          164
+        ],
+        [
+          128,
+          466
+        ]
+      ]
+    },
+    {
+      "model": "decision_tree",
+      "accuracy": 0.7015209125475285,
+      "precision": 0.767175572519084,
+      "recall": 0.6767676767676768,
+      "f1": 0.7191413237924866,
+      "roc_auc": 0.7597573258053606,
+      "confusion_matrix": [
+        [
+          336,
+          122
+        ],
+        [
+          192,
+          402
+        ]
+      ]
+    },
+    {
+      "model": "random_forest",
+      "accuracy": 0.7243346007604563,
+      "precision": 0.7420382165605095,
+      "recall": 0.7845117845117845,
+      "f1": 0.762684124386252,
+      "roc_auc": 0.7866988663931895,
+      "confusion_matrix": [
+        [
+          296,
+          162
+        ],
+        [
+          128,
+          466
+        ]
+      ]
+    },
+    {
+      "model": "xgboost",
+      "accuracy": 0.7243346007604563,
+      "precision": 0.7420382165605095,
+      "recall": 0.7845117845117845,
+      "f1": 0.762684124386252,
+      "roc_auc": 0.7791157572816961,
+      "confusion_matrix": [
+        [
+          296,
+          162
+        ],
+        [
+          128,
+          466
+        ]
+      ]
+    }
+  ],
+  "features": [
+    "recency_days",
+    "frequency",
+    "monetary_total",
+    "avg_order_value",
+    "distinct_products",
+    "tenure_days",
+    "num_returns",
+    "return_rate",
+    "country_group"
+  ]
+}
